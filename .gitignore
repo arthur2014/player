@@ -1,0 +1,7 @@
+.idea/
+MultiMediaDemo.iml
+gradle/
+gradlew
+gradlew.bat
+.gradle/
+build/
