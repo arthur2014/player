@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.arthur.multimediademo" >
+
+    <!--
+        <uses-permission android:name="com.htc.permission.APP_MEDIA" />
+    <uses-permission android:name="com.htc.soundrecorder.permission.RecordingService" />
+    -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".player.PlayerActivity"
+            android:label="@string/title_activity_player"
+            android:launchMode="singleTop" >
+        </activity>
+
+        <service
+            android:name=".player.PlayerService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+        <activity
+            android:name=".audio.AudioTrackActivity"
+            android:label="@string/title_activity_audio_track" >
+        </activity>
+    </application>
+
+</manifest>

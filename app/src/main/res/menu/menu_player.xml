@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.arthur.multimediademo.player.PlayerActivity">
+    <item
+        android:id="@+id/item_audio_local"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Local music" />
+    <item
+        android:id="@+id/item_audio_net"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Net Music" />
+    <item
+        android:id="@+id/item_video_local"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Local Video" />
+    <item
+        android:id="@+id/item_video_net"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Net Video" />
+</menu>
